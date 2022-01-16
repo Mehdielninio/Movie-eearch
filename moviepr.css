@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.Headers{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(52, 52, 100);
+    height: 60px;
+    margin:0px 10px 0px 10px;
+    position: relative;
+}
+.instant_search{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background-color: blue;
+    right: 2%;
+    z-index: 1;
+}
+.serach{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search_Bar{
+    margin-right: 5px;
+    width: 180px;
+    height: 30px;
+    transition:  0.5s ease-out;
+    border-radius: 12px;
+    padding-left: 15px;
+    
+
+}
+.searchbtn{
+    width: 70px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 20px;
+    
+}
+.Seach_Bar::placeholder{
+    color: seagreen;
+    padding-left: 10px;
+}
+.Search_Bar:focus{
+    width: 280px;
+    transition:  0.5s ease-in;
+    
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1rem;
+    color: wheat;
+    margin-left: 5px;
+}
+.movie{
+    width: 300px;
+    height: auto;
+    margin: 1rem;
+    background-color: yellow;
+    box-shadow: -10px 0px 13px -7px #000000;
+    border-radius: 10px;
+    position: relative;
+    overflow-y: hidden;
+    transition: all 0.2s ease-out;
+
+
+
+
+}
+.movie img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.movie_info{
+    display: flex;
+    justify-content: space-between;
+}
+.movie-detail{
+    margin-top: 5px;
+}
+.overview{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding: 1rem;
+    background-color: white;
+    transform: translateY(100%);
+    max-height: 100%;
+    transition: all 1s ease-out; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+
+}
+.movie:hover .overview{
+    transform: translateY(0%);
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px 10px 0px 0px;
+
+}
+span{
+font-size: 2rem;
+padding: 3px;
+color: black;
+
+}
+.overview h3{
+    font-family: sans-serif;
+
+}
+.movie_name{
+    font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3px;
+    font-size: 1rem;
+
+}
+.movie:hover{
+    margin-top: 3px;
+    transition: all 0.5s ease-in;
+
+}
